@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "ProjetoDanielEx.Core.Service/1.0.0": {
+        "dependencies": {
+          "ProjetoDanielEx.Core.Domain": "1.0.0"
+        },
+        "runtime": {
+          "ProjetoDanielEx.Core.Service.dll": {}
+        }
+      },
+      "ProjetoDanielEx.Core.Domain/1.0.0": {
+        "runtime": {
+          "ProjetoDanielEx.Core.Domain.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "ProjetoDanielEx.Core.Service/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "ProjetoDanielEx.Core.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

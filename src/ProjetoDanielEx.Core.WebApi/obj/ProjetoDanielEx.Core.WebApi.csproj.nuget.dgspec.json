@@ -1,0 +1,386 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\tkmas\\OneDrive\\Documentos\\Projetos GIT HUB\\Projeto Daniel\\AulaDaniel-Core\\src\\ProjetoDanielEx.Core.WebApi\\ProjetoDanielEx.Core.WebApi.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\tkmas\\OneDrive\\Documentos\\Projetos GIT HUB\\Projeto Daniel\\AulaDaniel-Core\\src\\ProjetoDanielEx.Core.Data\\ProjetoDanielEx.Core.Data.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\tkmas\\OneDrive\\Documentos\\Projetos GIT HUB\\Projeto Daniel\\AulaDaniel-Core\\src\\ProjetoDanielEx.Core.Data\\ProjetoDanielEx.Core.Data.csproj",
+        "projectName": "ProjetoDanielEx.Core.Data",
+        "projectPath": "C:\\Users\\tkmas\\OneDrive\\Documentos\\Projetos GIT HUB\\Projeto Daniel\\AulaDaniel-Core\\src\\ProjetoDanielEx.Core.Data\\ProjetoDanielEx.Core.Data.csproj",
+        "packagesPath": "C:\\Users\\tkmas\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\tkmas\\OneDrive\\Documentos\\Projetos GIT HUB\\Projeto Daniel\\AulaDaniel-Core\\src\\ProjetoDanielEx.Core.Data\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\tkmas\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "C:\\Users\\tkmas\\OneDrive\\Documentos\\Projetos GIT HUB\\Projeto Daniel\\AulaDaniel-Core\\src\\ProjetoDanielEx.Core.Domain\\ProjetoDanielEx.Core.Domain.csproj": {
+                "projectPath": "C:\\Users\\tkmas\\OneDrive\\Documentos\\Projetos GIT HUB\\Projeto Daniel\\AulaDaniel-Core\\src\\ProjetoDanielEx.Core.Domain\\ProjetoDanielEx.Core.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.11, )"
+            },
+            "Microsoft.EntityFrameworkCore.Relational": {
+              "target": "Package",
+              "version": "[5.0.11, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[5.0.11, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.11, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\tkmas\\OneDrive\\Documentos\\Projetos GIT HUB\\Projeto Daniel\\AulaDaniel-Core\\src\\ProjetoDanielEx.Core.Domain\\ProjetoDanielEx.Core.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\tkmas\\OneDrive\\Documentos\\Projetos GIT HUB\\Projeto Daniel\\AulaDaniel-Core\\src\\ProjetoDanielEx.Core.Domain\\ProjetoDanielEx.Core.Domain.csproj",
+        "projectName": "ProjetoDanielEx.Core.Domain",
+        "projectPath": "C:\\Users\\tkmas\\OneDrive\\Documentos\\Projetos GIT HUB\\Projeto Daniel\\AulaDaniel-Core\\src\\ProjetoDanielEx.Core.Domain\\ProjetoDanielEx.Core.Domain.csproj",
+        "packagesPath": "C:\\Users\\tkmas\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\tkmas\\OneDrive\\Documentos\\Projetos GIT HUB\\Projeto Daniel\\AulaDaniel-Core\\src\\ProjetoDanielEx.Core.Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\tkmas\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\tkmas\\OneDrive\\Documentos\\Projetos GIT HUB\\Projeto Daniel\\AulaDaniel-Core\\src\\ProjetoDanielEx.Core.IoC\\ProjetoDanielEx.Core.IoC.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\tkmas\\OneDrive\\Documentos\\Projetos GIT HUB\\Projeto Daniel\\AulaDaniel-Core\\src\\ProjetoDanielEx.Core.IoC\\ProjetoDanielEx.Core.IoC.csproj",
+        "projectName": "ProjetoDanielEx.Core.IoC",
+        "projectPath": "C:\\Users\\tkmas\\OneDrive\\Documentos\\Projetos GIT HUB\\Projeto Daniel\\AulaDaniel-Core\\src\\ProjetoDanielEx.Core.IoC\\ProjetoDanielEx.Core.IoC.csproj",
+        "packagesPath": "C:\\Users\\tkmas\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\tkmas\\OneDrive\\Documentos\\Projetos GIT HUB\\Projeto Daniel\\AulaDaniel-Core\\src\\ProjetoDanielEx.Core.IoC\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\tkmas\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "C:\\Users\\tkmas\\OneDrive\\Documentos\\Projetos GIT HUB\\Projeto Daniel\\AulaDaniel-Core\\src\\ProjetoDanielEx.Core.Data\\ProjetoDanielEx.Core.Data.csproj": {
+                "projectPath": "C:\\Users\\tkmas\\OneDrive\\Documentos\\Projetos GIT HUB\\Projeto Daniel\\AulaDaniel-Core\\src\\ProjetoDanielEx.Core.Data\\ProjetoDanielEx.Core.Data.csproj"
+              },
+              "C:\\Users\\tkmas\\OneDrive\\Documentos\\Projetos GIT HUB\\Projeto Daniel\\AulaDaniel-Core\\src\\ProjetoDanielEx.Core.Service\\ProjetoDanielEx.Core.Service.csproj": {
+                "projectPath": "C:\\Users\\tkmas\\OneDrive\\Documentos\\Projetos GIT HUB\\Projeto Daniel\\AulaDaniel-Core\\src\\ProjetoDanielEx.Core.Service\\ProjetoDanielEx.Core.Service.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.Extensions.Configuration": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "Microsoft.Extensions.Configuration.FileExtensions": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "Microsoft.Extensions.Configuration.Json": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "Microsoft.Extensions.DependencyInjection.Abstractions": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\tkmas\\OneDrive\\Documentos\\Projetos GIT HUB\\Projeto Daniel\\AulaDaniel-Core\\src\\ProjetoDanielEx.Core.Service\\ProjetoDanielEx.Core.Service.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\tkmas\\OneDrive\\Documentos\\Projetos GIT HUB\\Projeto Daniel\\AulaDaniel-Core\\src\\ProjetoDanielEx.Core.Service\\ProjetoDanielEx.Core.Service.csproj",
+        "projectName": "ProjetoDanielEx.Core.Service",
+        "projectPath": "C:\\Users\\tkmas\\OneDrive\\Documentos\\Projetos GIT HUB\\Projeto Daniel\\AulaDaniel-Core\\src\\ProjetoDanielEx.Core.Service\\ProjetoDanielEx.Core.Service.csproj",
+        "packagesPath": "C:\\Users\\tkmas\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\tkmas\\OneDrive\\Documentos\\Projetos GIT HUB\\Projeto Daniel\\AulaDaniel-Core\\src\\ProjetoDanielEx.Core.Service\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\tkmas\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "C:\\Users\\tkmas\\OneDrive\\Documentos\\Projetos GIT HUB\\Projeto Daniel\\AulaDaniel-Core\\src\\ProjetoDanielEx.Core.Domain\\ProjetoDanielEx.Core.Domain.csproj": {
+                "projectPath": "C:\\Users\\tkmas\\OneDrive\\Documentos\\Projetos GIT HUB\\Projeto Daniel\\AulaDaniel-Core\\src\\ProjetoDanielEx.Core.Domain\\ProjetoDanielEx.Core.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\tkmas\\OneDrive\\Documentos\\Projetos GIT HUB\\Projeto Daniel\\AulaDaniel-Core\\src\\ProjetoDanielEx.Core.WebApi\\ProjetoDanielEx.Core.WebApi.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\tkmas\\OneDrive\\Documentos\\Projetos GIT HUB\\Projeto Daniel\\AulaDaniel-Core\\src\\ProjetoDanielEx.Core.WebApi\\ProjetoDanielEx.Core.WebApi.csproj",
+        "projectName": "ProjetoDanielEx.Core.WebApi",
+        "projectPath": "C:\\Users\\tkmas\\OneDrive\\Documentos\\Projetos GIT HUB\\Projeto Daniel\\AulaDaniel-Core\\src\\ProjetoDanielEx.Core.WebApi\\ProjetoDanielEx.Core.WebApi.csproj",
+        "packagesPath": "C:\\Users\\tkmas\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\tkmas\\OneDrive\\Documentos\\Projetos GIT HUB\\Projeto Daniel\\AulaDaniel-Core\\src\\ProjetoDanielEx.Core.WebApi\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\tkmas\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "C:\\Users\\tkmas\\OneDrive\\Documentos\\Projetos GIT HUB\\Projeto Daniel\\AulaDaniel-Core\\src\\ProjetoDanielEx.Core.Data\\ProjetoDanielEx.Core.Data.csproj": {
+                "projectPath": "C:\\Users\\tkmas\\OneDrive\\Documentos\\Projetos GIT HUB\\Projeto Daniel\\AulaDaniel-Core\\src\\ProjetoDanielEx.Core.Data\\ProjetoDanielEx.Core.Data.csproj"
+              },
+              "C:\\Users\\tkmas\\OneDrive\\Documentos\\Projetos GIT HUB\\Projeto Daniel\\AulaDaniel-Core\\src\\ProjetoDanielEx.Core.IoC\\ProjetoDanielEx.Core.IoC.csproj": {
+                "projectPath": "C:\\Users\\tkmas\\OneDrive\\Documentos\\Projetos GIT HUB\\Projeto Daniel\\AulaDaniel-Core\\src\\ProjetoDanielEx.Core.IoC\\ProjetoDanielEx.Core.IoC.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "MiNET": {
+              "target": "Package",
+              "version": "[1.0.2283, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.11, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer.Design": {
+              "target": "Package",
+              "version": "[1.1.6, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[5.6.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
