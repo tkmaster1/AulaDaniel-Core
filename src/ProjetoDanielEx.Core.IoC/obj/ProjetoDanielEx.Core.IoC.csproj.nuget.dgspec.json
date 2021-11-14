@@ -1,26 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\tkmas\\OneDrive\\Documentos\\Projetos GIT HUB\\Projeto Daniel\\AulaDaniel-Core\\src\\ProjetoDanielEx.Core.IoC\\ProjetoDanielEx.Core.IoC.csproj": {}
+    "C:\\Projetos GitHub\\Projeto Aula Daniel\\AulaDaniel-Core\\src\\ProjetoDanielEx.Core.IoC\\ProjetoDanielEx.Core.IoC.csproj": {}
   },
   "projects": {
-    "C:\\Users\\tkmas\\OneDrive\\Documentos\\Projetos GIT HUB\\Projeto Daniel\\AulaDaniel-Core\\src\\ProjetoDanielEx.Core.Data\\ProjetoDanielEx.Core.Data.csproj": {
+    "C:\\Projetos GitHub\\Projeto Aula Daniel\\AulaDaniel-Core\\src\\ProjetoDanielEx.Core.Data\\ProjetoDanielEx.Core.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\tkmas\\OneDrive\\Documentos\\Projetos GIT HUB\\Projeto Daniel\\AulaDaniel-Core\\src\\ProjetoDanielEx.Core.Data\\ProjetoDanielEx.Core.Data.csproj",
+        "projectUniqueName": "C:\\Projetos GitHub\\Projeto Aula Daniel\\AulaDaniel-Core\\src\\ProjetoDanielEx.Core.Data\\ProjetoDanielEx.Core.Data.csproj",
         "projectName": "ProjetoDanielEx.Core.Data",
-        "projectPath": "C:\\Users\\tkmas\\OneDrive\\Documentos\\Projetos GIT HUB\\Projeto Daniel\\AulaDaniel-Core\\src\\ProjetoDanielEx.Core.Data\\ProjetoDanielEx.Core.Data.csproj",
+        "projectPath": "C:\\Projetos GitHub\\Projeto Aula Daniel\\AulaDaniel-Core\\src\\ProjetoDanielEx.Core.Data\\ProjetoDanielEx.Core.Data.csproj",
         "packagesPath": "C:\\Users\\tkmas\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\tkmas\\OneDrive\\Documentos\\Projetos GIT HUB\\Projeto Daniel\\AulaDaniel-Core\\src\\ProjetoDanielEx.Core.Data\\obj\\",
+        "outputPath": "C:\\Projetos GitHub\\Projeto Aula Daniel\\AulaDaniel-Core\\src\\ProjetoDanielEx.Core.Data\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
           "C:\\Users\\tkmas\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
@@ -33,8 +32,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\tkmas\\OneDrive\\Documentos\\Projetos GIT HUB\\Projeto Daniel\\AulaDaniel-Core\\src\\ProjetoDanielEx.Core.Domain\\ProjetoDanielEx.Core.Domain.csproj": {
-                "projectPath": "C:\\Users\\tkmas\\OneDrive\\Documentos\\Projetos GIT HUB\\Projeto Daniel\\AulaDaniel-Core\\src\\ProjetoDanielEx.Core.Domain\\ProjetoDanielEx.Core.Domain.csproj"
+              "C:\\Projetos GitHub\\Projeto Aula Daniel\\AulaDaniel-Core\\src\\ProjetoDanielEx.Core.Domain\\ProjetoDanielEx.Core.Domain.csproj": {
+                "projectPath": "C:\\Projetos GitHub\\Projeto Aula Daniel\\AulaDaniel-Core\\src\\ProjetoDanielEx.Core.Domain\\ProjetoDanielEx.Core.Domain.csproj"
               }
             }
           }
@@ -83,27 +82,26 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.403\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\tkmas\\OneDrive\\Documentos\\Projetos GIT HUB\\Projeto Daniel\\AulaDaniel-Core\\src\\ProjetoDanielEx.Core.Domain\\ProjetoDanielEx.Core.Domain.csproj": {
+    "C:\\Projetos GitHub\\Projeto Aula Daniel\\AulaDaniel-Core\\src\\ProjetoDanielEx.Core.Domain\\ProjetoDanielEx.Core.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\tkmas\\OneDrive\\Documentos\\Projetos GIT HUB\\Projeto Daniel\\AulaDaniel-Core\\src\\ProjetoDanielEx.Core.Domain\\ProjetoDanielEx.Core.Domain.csproj",
+        "projectUniqueName": "C:\\Projetos GitHub\\Projeto Aula Daniel\\AulaDaniel-Core\\src\\ProjetoDanielEx.Core.Domain\\ProjetoDanielEx.Core.Domain.csproj",
         "projectName": "ProjetoDanielEx.Core.Domain",
-        "projectPath": "C:\\Users\\tkmas\\OneDrive\\Documentos\\Projetos GIT HUB\\Projeto Daniel\\AulaDaniel-Core\\src\\ProjetoDanielEx.Core.Domain\\ProjetoDanielEx.Core.Domain.csproj",
+        "projectPath": "C:\\Projetos GitHub\\Projeto Aula Daniel\\AulaDaniel-Core\\src\\ProjetoDanielEx.Core.Domain\\ProjetoDanielEx.Core.Domain.csproj",
         "packagesPath": "C:\\Users\\tkmas\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\tkmas\\OneDrive\\Documentos\\Projetos GIT HUB\\Projeto Daniel\\AulaDaniel-Core\\src\\ProjetoDanielEx.Core.Domain\\obj\\",
+        "outputPath": "C:\\Projetos GitHub\\Projeto Aula Daniel\\AulaDaniel-Core\\src\\ProjetoDanielEx.Core.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
           "C:\\Users\\tkmas\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
@@ -142,27 +140,26 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.403\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\tkmas\\OneDrive\\Documentos\\Projetos GIT HUB\\Projeto Daniel\\AulaDaniel-Core\\src\\ProjetoDanielEx.Core.IoC\\ProjetoDanielEx.Core.IoC.csproj": {
+    "C:\\Projetos GitHub\\Projeto Aula Daniel\\AulaDaniel-Core\\src\\ProjetoDanielEx.Core.IoC\\ProjetoDanielEx.Core.IoC.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\tkmas\\OneDrive\\Documentos\\Projetos GIT HUB\\Projeto Daniel\\AulaDaniel-Core\\src\\ProjetoDanielEx.Core.IoC\\ProjetoDanielEx.Core.IoC.csproj",
+        "projectUniqueName": "C:\\Projetos GitHub\\Projeto Aula Daniel\\AulaDaniel-Core\\src\\ProjetoDanielEx.Core.IoC\\ProjetoDanielEx.Core.IoC.csproj",
         "projectName": "ProjetoDanielEx.Core.IoC",
-        "projectPath": "C:\\Users\\tkmas\\OneDrive\\Documentos\\Projetos GIT HUB\\Projeto Daniel\\AulaDaniel-Core\\src\\ProjetoDanielEx.Core.IoC\\ProjetoDanielEx.Core.IoC.csproj",
+        "projectPath": "C:\\Projetos GitHub\\Projeto Aula Daniel\\AulaDaniel-Core\\src\\ProjetoDanielEx.Core.IoC\\ProjetoDanielEx.Core.IoC.csproj",
         "packagesPath": "C:\\Users\\tkmas\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\tkmas\\OneDrive\\Documentos\\Projetos GIT HUB\\Projeto Daniel\\AulaDaniel-Core\\src\\ProjetoDanielEx.Core.IoC\\obj\\",
+        "outputPath": "C:\\Projetos GitHub\\Projeto Aula Daniel\\AulaDaniel-Core\\src\\ProjetoDanielEx.Core.IoC\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
           "C:\\Users\\tkmas\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
@@ -175,11 +172,11 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\tkmas\\OneDrive\\Documentos\\Projetos GIT HUB\\Projeto Daniel\\AulaDaniel-Core\\src\\ProjetoDanielEx.Core.Data\\ProjetoDanielEx.Core.Data.csproj": {
-                "projectPath": "C:\\Users\\tkmas\\OneDrive\\Documentos\\Projetos GIT HUB\\Projeto Daniel\\AulaDaniel-Core\\src\\ProjetoDanielEx.Core.Data\\ProjetoDanielEx.Core.Data.csproj"
+              "C:\\Projetos GitHub\\Projeto Aula Daniel\\AulaDaniel-Core\\src\\ProjetoDanielEx.Core.Data\\ProjetoDanielEx.Core.Data.csproj": {
+                "projectPath": "C:\\Projetos GitHub\\Projeto Aula Daniel\\AulaDaniel-Core\\src\\ProjetoDanielEx.Core.Data\\ProjetoDanielEx.Core.Data.csproj"
               },
-              "C:\\Users\\tkmas\\OneDrive\\Documentos\\Projetos GIT HUB\\Projeto Daniel\\AulaDaniel-Core\\src\\ProjetoDanielEx.Core.Service\\ProjetoDanielEx.Core.Service.csproj": {
-                "projectPath": "C:\\Users\\tkmas\\OneDrive\\Documentos\\Projetos GIT HUB\\Projeto Daniel\\AulaDaniel-Core\\src\\ProjetoDanielEx.Core.Service\\ProjetoDanielEx.Core.Service.csproj"
+              "C:\\Projetos GitHub\\Projeto Aula Daniel\\AulaDaniel-Core\\src\\ProjetoDanielEx.Core.Service\\ProjetoDanielEx.Core.Service.csproj": {
+                "projectPath": "C:\\Projetos GitHub\\Projeto Aula Daniel\\AulaDaniel-Core\\src\\ProjetoDanielEx.Core.Service\\ProjetoDanielEx.Core.Service.csproj"
               }
             }
           }
@@ -226,27 +223,26 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.403\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\tkmas\\OneDrive\\Documentos\\Projetos GIT HUB\\Projeto Daniel\\AulaDaniel-Core\\src\\ProjetoDanielEx.Core.Service\\ProjetoDanielEx.Core.Service.csproj": {
+    "C:\\Projetos GitHub\\Projeto Aula Daniel\\AulaDaniel-Core\\src\\ProjetoDanielEx.Core.Service\\ProjetoDanielEx.Core.Service.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\tkmas\\OneDrive\\Documentos\\Projetos GIT HUB\\Projeto Daniel\\AulaDaniel-Core\\src\\ProjetoDanielEx.Core.Service\\ProjetoDanielEx.Core.Service.csproj",
+        "projectUniqueName": "C:\\Projetos GitHub\\Projeto Aula Daniel\\AulaDaniel-Core\\src\\ProjetoDanielEx.Core.Service\\ProjetoDanielEx.Core.Service.csproj",
         "projectName": "ProjetoDanielEx.Core.Service",
-        "projectPath": "C:\\Users\\tkmas\\OneDrive\\Documentos\\Projetos GIT HUB\\Projeto Daniel\\AulaDaniel-Core\\src\\ProjetoDanielEx.Core.Service\\ProjetoDanielEx.Core.Service.csproj",
+        "projectPath": "C:\\Projetos GitHub\\Projeto Aula Daniel\\AulaDaniel-Core\\src\\ProjetoDanielEx.Core.Service\\ProjetoDanielEx.Core.Service.csproj",
         "packagesPath": "C:\\Users\\tkmas\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\tkmas\\OneDrive\\Documentos\\Projetos GIT HUB\\Projeto Daniel\\AulaDaniel-Core\\src\\ProjetoDanielEx.Core.Service\\obj\\",
+        "outputPath": "C:\\Projetos GitHub\\Projeto Aula Daniel\\AulaDaniel-Core\\src\\ProjetoDanielEx.Core.Service\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
           "C:\\Users\\tkmas\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
@@ -259,8 +255,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\tkmas\\OneDrive\\Documentos\\Projetos GIT HUB\\Projeto Daniel\\AulaDaniel-Core\\src\\ProjetoDanielEx.Core.Domain\\ProjetoDanielEx.Core.Domain.csproj": {
-                "projectPath": "C:\\Users\\tkmas\\OneDrive\\Documentos\\Projetos GIT HUB\\Projeto Daniel\\AulaDaniel-Core\\src\\ProjetoDanielEx.Core.Domain\\ProjetoDanielEx.Core.Domain.csproj"
+              "C:\\Projetos GitHub\\Projeto Aula Daniel\\AulaDaniel-Core\\src\\ProjetoDanielEx.Core.Domain\\ProjetoDanielEx.Core.Domain.csproj": {
+                "projectPath": "C:\\Projetos GitHub\\Projeto Aula Daniel\\AulaDaniel-Core\\src\\ProjetoDanielEx.Core.Domain\\ProjetoDanielEx.Core.Domain.csproj"
               }
             }
           }
@@ -289,7 +285,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.403\\RuntimeIdentifierGraph.json"
         }
       }
     }
