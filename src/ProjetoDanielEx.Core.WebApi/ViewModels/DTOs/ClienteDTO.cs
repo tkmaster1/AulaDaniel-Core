@@ -20,11 +20,27 @@ namespace ProjetoDanielEx.Core.WebApi.ViewModels.DTOs
         //[ScaffoldColumn(false)]
         //public DateTime? DataExclusao { get; set; }
 
-     //   public bool Status { get; set; }
+        //   public bool Status { get; set; }
 
         public string Documento { get; set; }
 
         public string TipoPessoa { get; set; }
+
+        [NotMapped]
+        public string TipoPessoaFormatado
+        {
+            get
+            {
+                if (TipoPessoa.Equals("F"))
+                {
+                    return "Pessoa Física";
+                }
+                else
+                {
+                    return "Pessoa Jurídica";
+                }
+            }
+        }
 
         [NotMapped]
         public string DescricaoStatus { get; set; }
