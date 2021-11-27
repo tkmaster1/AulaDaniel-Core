@@ -1,6 +1,6 @@
 ﻿using ProjetoDanielEx.Core.Domain.Entities;
 using ProjetoDanielEx.Core.WebApi.ViewModels.DTOs;
-using ProjetoDanielEx.Core.WebApi.ViewModels.Request;
+using ProjetoDanielEx.Core.WebApi.ViewModels.Request.Cliente;
 
 namespace ProjetoDanielEx.Core.WebApi.Mapper
 {

@@ -3,7 +3,7 @@ using ProjetoDanielEx.Core.Domain.Interfaces.Notifications;
 using ProjetoDanielEx.Core.Domain.Interfaces.Services;
 using ProjetoDanielEx.Core.Domain.Notifications;
 using ProjetoDanielEx.Core.WebApi.Mapper;
-using ProjetoDanielEx.Core.WebApi.ViewModels.Request;
+using ProjetoDanielEx.Core.WebApi.ViewModels.Request.Cliente;
 using ProjetoDanielEx.Core.WebApi.ViewModels.Responses;
 using System.Linq;
 using System.Threading.Tasks;

@@ -1,6 +1,4 @@
-﻿using MiNET.Blocks;
-using System;
-using System.ComponentModel.DataAnnotations;
+﻿using System;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace ProjetoDanielEx.Core.WebApi.ViewModels.DTOs
@@ -10,18 +8,7 @@ namespace ProjetoDanielEx.Core.WebApi.ViewModels.DTOs
         public int Codigo { get; set; }
 
         public string Nome { get; set; }
-
-        //[ScaffoldColumn(false)]
-        //public DateTime DataCadastro { get; set; }
-
-        //[ScaffoldColumn(false)]
-        //public DateTime? DataAlteracao { get; set; }
-
-        //[ScaffoldColumn(false)]
-        //public DateTime? DataExclusao { get; set; }
-
-        //   public bool Status { get; set; }
-
+       
         public string Documento { get; set; }
 
         public string TipoPessoa { get; set; }
