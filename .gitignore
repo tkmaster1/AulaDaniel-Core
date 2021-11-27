@@ -11,6 +11,7 @@
 *.suo
 *.user
 *.sln.docstates
+*.cache
 
 # Build results
 [Dd]ebug/
@@ -197,6 +198,7 @@ $RECYCLE.BIN/
 
 # Visual Studio temp something
 .vs/
+*.dtbcache.v2
 
 # dotnet stuff
 project.lock.json
