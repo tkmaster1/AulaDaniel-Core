@@ -1,4 +1,5 @@
-﻿using ProjetoDanielEx.Core.Domain.Entities;
+﻿using ProjetoDanielEx.Common.Utilities;
+using ProjetoDanielEx.Core.Domain.Entities;
 using ProjetoDanielEx.Core.WebApi.ViewModels.DTOs;
 using ProjetoDanielEx.Core.WebApi.ViewModels.Request.Cliente;
 
@@ -23,7 +24,7 @@ namespace ProjetoDanielEx.Core.WebApi.Mapper
             return new Cliente()
             {
                 Nome = request.Nome,
-                Documento = request.Documento,
+                Documento = Util.RemoveNaoNumericos(request.Documento),
                 TipoPessoa = request.TipoPessoa.Trim().ToUpper()
             };
         }
@@ -34,7 +35,7 @@ namespace ProjetoDanielEx.Core.WebApi.Mapper
             {
                 Codigo = request.Codigo,
                 Nome = request.Nome,
-                Documento = request.Documento,
+                Documento = Util.RemoveNaoNumericos(request.Documento),
                 TipoPessoa = request.TipoPessoa.Trim().ToUpper()
             };
         }

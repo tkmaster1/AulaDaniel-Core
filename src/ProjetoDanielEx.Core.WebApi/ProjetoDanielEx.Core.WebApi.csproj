@@ -15,6 +15,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\ProjetoDanielEx.Common.Utilities\ProjetoDanielEx.Common.Utilities.csproj" />
     <ProjectReference Include="..\ProjetoDanielEx.Core.Data\ProjetoDanielEx.Core.Data.csproj" />
     <ProjectReference Include="..\ProjetoDanielEx.Core.IoC\ProjetoDanielEx.Core.IoC.csproj" />
   </ItemGroup>
