@@ -1,6 +1,6 @@
 ﻿namespace ProjetoDanielEx.Core.WebApi.ViewModels.Request.Cliente
 {
-    public class RequestCliente
+    public class RequestAdicionarCliente
     {
         public string Nome { get; set; }
 

@@ -71,7 +71,7 @@ namespace ProjetoDanielEx.Core.WebApi.Controllers
         [ProducesResponseType(typeof(ResponseFalha), 409)]
         [ProducesResponseType(typeof(ResponseFalha), 500)]
         [ProducesResponseType(typeof(ResponseFalha), 502)]
-        public async Task<IActionResult> Adicionar([FromBody] RequestCliente request)
+        public async Task<IActionResult> Adicionar([FromBody] RequestAdicionarCliente request)
         {
             return Response(await _clienteAppServ.Adicionar(request.ToRequest()));
         }
@@ -99,9 +99,23 @@ namespace ProjetoDanielEx.Core.WebApi.Controllers
         [ProducesResponseType(typeof(ResponseFalha), 409)]
         [ProducesResponseType(typeof(ResponseFalha), 500)]
         [ProducesResponseType(typeof(ResponseFalha), 502)]
-        public async Task<IActionResult> Excluir([FromBody] RequestExcluirCliente request)
+        public async Task<IActionResult> Excluir([FromBody] RequestReativarExcluirCliente request)
         {
             return Response(await _clienteAppServ.Excluir(request.ToRequest()));
+        }
+
+        [HttpPut("Reativar")]
+        [Consumes("application/Json")]
+        [Produces("application/Json")]
+        [ProducesResponseType(typeof(ResponseEntidadeBase), 200)]
+        [ProducesResponseType(typeof(ResponseFalha), 400)]
+        [ProducesResponseType(typeof(ResponseFalha), 403)]
+        [ProducesResponseType(typeof(ResponseFalha), 409)]
+        [ProducesResponseType(typeof(ResponseFalha), 500)]
+        [ProducesResponseType(typeof(ResponseFalha), 502)]
+        public async Task<IActionResult> Reativar([FromBody] RequestReativarExcluirCliente request)
+        {
+            return Response(await _clienteAppServ.Reativar(request.ToRequest()));
         }
 
         #endregion

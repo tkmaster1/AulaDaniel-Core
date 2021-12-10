@@ -19,7 +19,7 @@ namespace ProjetoDanielEx.Core.WebApi.Mapper
             };
         }
 
-        public static Cliente ToRequest(this RequestCliente request)
+        public static Cliente ToRequest(this RequestAdicionarCliente request)
         {
             return new Cliente()
             {
@@ -40,7 +40,7 @@ namespace ProjetoDanielEx.Core.WebApi.Mapper
             };
         }
 
-        public static Cliente ToRequest(this RequestExcluirCliente request)
+        public static Cliente ToRequest(this RequestReativarExcluirCliente request)
         {
             return new Cliente()
             {

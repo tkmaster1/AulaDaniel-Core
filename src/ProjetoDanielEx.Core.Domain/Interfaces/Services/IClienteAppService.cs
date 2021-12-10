@@ -16,5 +16,7 @@ namespace ProjetoDanielEx.Core.Domain.Interfaces.Services
         Task<bool> Atualizar(Cliente entity);
 
         Task<bool> Excluir(Cliente entity);
+
+        Task<bool> Reativar(Cliente entity);
     }
 }

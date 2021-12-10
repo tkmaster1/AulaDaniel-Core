@@ -67,6 +67,15 @@ namespace ProjetoDanielEx.Core.Service.Application
             return await _clienteRepository.Salvar() > 0;
         }
 
+        public async Task<bool> Reativar(Cliente entity)
+        {
+            var model = await _clienteRepository.ObterPorCodigo(entity.Codigo);
+            model.Status = true;
+            _clienteRepository.Atualizar(model);
+
+            return await _clienteRepository.Salvar() > 0;
+        }
+
         public void Dispose()
         {
             GC.SuppressFinalize(this);
