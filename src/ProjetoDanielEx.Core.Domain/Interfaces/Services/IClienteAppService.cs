@@ -18,5 +18,9 @@ namespace ProjetoDanielEx.Core.Domain.Interfaces.Services
         Task<bool> Excluir(Cliente entity);
 
         Task<bool> Reativar(Cliente entity);
+
+        Task<Cliente> NomeExiste(string nomeDoCliente);
+
+        Task<Cliente> DocumentoExiste(string documento);
     }
 }

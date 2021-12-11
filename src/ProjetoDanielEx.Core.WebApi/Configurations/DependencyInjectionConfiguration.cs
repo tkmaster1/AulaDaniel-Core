@@ -1,9 +1,6 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
 using ProjetoDanielEx.Core.IoC;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace ProjetoDanielEx.Core.WebApi.Configurations
 {

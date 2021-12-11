@@ -76,6 +76,16 @@ namespace ProjetoDanielEx.Core.Service.Application
             return await _clienteRepository.Salvar() > 0;
         }
 
+        public async Task<Cliente> NomeExiste(string nomeDoCliente)
+        {
+            return await _clienteRepository.NomeExiste(nomeDoCliente);
+        }
+
+        public async Task<Cliente> DocumentoExiste(string documento)
+        {
+            return await _clienteRepository.DocumentoExiste(documento);
+        }
+
         public void Dispose()
         {
             GC.SuppressFinalize(this);

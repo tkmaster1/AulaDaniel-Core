@@ -62,7 +62,7 @@ namespace ProjetoDanielEx.Core.WebApi
             {
                 app.UseDeveloperExceptionPage();
                 app.UseSwagger();
-                app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "ProjetoDanielEx.Core.WebApi v1"));
+                app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "Projeto Ensino Daniel Core WebApi v1"));
             }
 
             app.UseHttpsRedirection();
@@ -90,7 +90,7 @@ namespace ProjetoDanielEx.Core.WebApi
             app.UseSwagger();
             app.UseSwaggerUI(s =>
             {
-                s.SwaggerEndpoint("../swagger/v1/swagger.json", "ProjetoDanielEx.Core.WebApi v1");
+                s.SwaggerEndpoint("../swagger/v1/swagger.json", "Projeto Ensino Daniel Core WebApi v1");
             });
         }
 

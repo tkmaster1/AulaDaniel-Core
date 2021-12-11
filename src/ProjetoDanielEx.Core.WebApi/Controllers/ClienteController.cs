@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using ProjetoDanielEx.Common.Utilities;
 using ProjetoDanielEx.Core.Domain.Interfaces.Notifications;
 using ProjetoDanielEx.Core.Domain.Interfaces.Services;
 using ProjetoDanielEx.Core.Domain.Notifications;
@@ -116,6 +117,38 @@ namespace ProjetoDanielEx.Core.WebApi.Controllers
         public async Task<IActionResult> Reativar([FromBody] RequestReativarExcluirCliente request)
         {
             return Response(await _clienteAppServ.Reativar(request.ToRequest()));
+        }
+
+        [HttpGet]
+        [Route("NomeExiste/{nomeDoCliente}")]
+        [Consumes("application/Json")]
+        [Produces("application/Json")]
+        [ProducesResponseType(typeof(ResponseEntidadeBase), 200)]
+        [ProducesResponseType(typeof(ResponseFalha), 400)]
+        [ProducesResponseType(typeof(ResponseFalha), 403)]
+        [ProducesResponseType(typeof(ResponseFalha), 409)]
+        [ProducesResponseType(typeof(ResponseFalha), 500)]
+        [ProducesResponseType(typeof(ResponseFalha), 502)]
+        public async Task<IActionResult> NomeExiste(string nomeDoCliente)
+        {
+            var cliente = await _clienteAppServ.NomeExiste(nomeDoCliente);
+            return Response(cliente?.ToResponse());
+        }
+
+        [HttpGet]
+        [Route("DocumentoExiste/{documento}")]
+        [Consumes("application/Json")]
+        [Produces("application/Json")]
+        [ProducesResponseType(typeof(ResponseEntidadeBase), 200)]
+        [ProducesResponseType(typeof(ResponseFalha), 400)]
+        [ProducesResponseType(typeof(ResponseFalha), 403)]
+        [ProducesResponseType(typeof(ResponseFalha), 409)]
+        [ProducesResponseType(typeof(ResponseFalha), 500)]
+        [ProducesResponseType(typeof(ResponseFalha), 502)]
+        public async Task<IActionResult> DocumentoExiste(string documento)
+        {
+            var cliente = await _clienteAppServ.DocumentoExiste(Util.RemoveNaoNumericos(documento));
+            return Response(cliente?.ToResponse());
         }
 
         #endregion

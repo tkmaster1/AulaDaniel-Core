@@ -13,7 +13,7 @@ namespace ProjetoDanielEx.Core.WebApi.Mapper
             {
                 Codigo = entity.Codigo,
                 Nome = entity.Nome,
-                DescricaoStatus = entity.Status ? "Ativo" : "Inativo",
+                Status = entity.Status,
                 Documento = entity.Documento,
                 TipoPessoa = entity.TipoPessoa.Trim().ToUpper()
             };
