@@ -22,5 +22,7 @@ namespace ProjetoDanielEx.Core.Domain.Interfaces.Services
         Task<Cliente> NomeExiste(string nomeDoCliente);
 
         Task<Cliente> DocumentoExiste(string documento);
+
+        Task<Cliente> ObterClienteEndereco(int codigoCliente);
     }
 }

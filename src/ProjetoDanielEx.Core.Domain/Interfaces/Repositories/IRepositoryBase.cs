@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ProjetoDanielEx.Core.Domain.Interfaces.Repositories
 {
-    public interface IRepositoryBase<TEntity> : IDisposable where TEntity : class
+    public interface IRepositoryBase<TEntity> : IDisposable where TEntity : Entity
     {
         void Adicionar(TEntity entity);
 

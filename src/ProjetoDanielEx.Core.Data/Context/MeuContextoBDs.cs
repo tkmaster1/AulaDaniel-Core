@@ -21,6 +21,8 @@ namespace ProjetoDanielEx.Core.Data
 
         public DbSet<Cliente> Clientes { get; set; }
 
+        public DbSet<Endereco> Enderecos { get; set; }
+
         #endregion
 
         #region ModelBuilder e SaveChanges
@@ -41,67 +43,67 @@ namespace ProjetoDanielEx.Core.Data
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.EnableSensitiveDataLogging();
+            optionsBuilder.EnableSensitiveDataLogging(false);
         }
 
-        public override Task<int> SaveChangesAsync(CancellationToken cancellationToken = new CancellationToken())
-        {
-            foreach (var entry in ChangeTracker.Entries()
-                                  .Where(entry => entry.Entity.GetType().GetProperty("DataCadastro") != null))
-            {
-                if (entry.State == EntityState.Added)
-                {
-                    entry.Property("DataCadastro").CurrentValue = DateTime.Now;
-                    entry.Property("Status").CurrentValue = true;
-                    entry.Property("DataAlteracao").IsModified = false;
-                    entry.Property("DataExclusao").IsModified = false;
-                }
+        //public override Task<int> SaveChangesAsync(CancellationToken cancellationToken = new CancellationToken())
+        //{
+        //    foreach (var entry in ChangeTracker.Entries()
+        //                          .Where(entry => entry.Entity.GetType().GetProperty("DataCadastro") != null))
+        //    {
+        //        if (entry.State == EntityState.Added)
+        //        {
+        //            entry.Property("DataCadastro").CurrentValue = DateTime.Now;
+        //            entry.Property("Status").CurrentValue = true;
+        //            entry.Property("DataAlteracao").IsModified = false;
+        //            entry.Property("DataExclusao").IsModified = false;
+        //        }
 
-                if (entry.State == EntityState.Modified)
-                {
-                    entry.Property("DataCadastro").IsModified = false;
+        //        if (entry.State == EntityState.Modified)
+        //        {
+        //            entry.Property("DataCadastro").IsModified = false;
 
-                    if ((bool)entry.Property("Status").CurrentValue)
-                    {
-                        entry.Property("DataAlteracao").CurrentValue = DateTime.Now;
-                        entry.Property("DataExclusao").IsModified = false;
-                    }
-                    else
-                    {
-                        entry.Property("DataAlteracao").IsModified = false;
-                        entry.Property("DataExclusao").CurrentValue = DateTime.Now;
-                    }
-                }
-            }
+        //            if ((bool)entry.Property("Status").CurrentValue)
+        //            {
+        //                entry.Property("DataAlteracao").CurrentValue = DateTime.Now;
+        //                entry.Property("DataExclusao").IsModified = false;
+        //            }
+        //            else
+        //            {
+        //                entry.Property("DataAlteracao").IsModified = false;
+        //                entry.Property("DataExclusao").CurrentValue = DateTime.Now;
+        //            }
+        //        }
+        //    }
 
-            foreach (var entry in ChangeTracker.Entries().Where(entry => entry.Entity.GetType().GetProperty("DataAlteracao") != null))
-            {
-                if (entry.State == EntityState.Added)
-                {
-                    entry.Property("DataCadastro").IsModified = false;
-                    entry.Property("DataAlteracao").IsModified = false;
-                    entry.Property("DataExclusao").IsModified = false;
-                }
+        //    foreach (var entry in ChangeTracker.Entries().Where(entry => entry.Entity.GetType().GetProperty("DataAlteracao") != null))
+        //    {
+        //        if (entry.State == EntityState.Added)
+        //        {
+        //            entry.Property("DataCadastro").IsModified = false;
+        //            entry.Property("DataAlteracao").IsModified = false;
+        //            entry.Property("DataExclusao").IsModified = false;
+        //        }
 
-                if (entry.State == EntityState.Modified)
-                {
-                    entry.Property("DataCadastro").IsModified = false;
+        //        if (entry.State == EntityState.Modified)
+        //        {
+        //            entry.Property("DataCadastro").IsModified = false;
 
-                    if ((bool)entry.Property("Status").CurrentValue)
-                    {
-                        entry.Property("DataAlteracao").CurrentValue = DateTime.Now;
-                        entry.Property("DataExclusao").IsModified = false;
-                    }
-                    else
-                    {
-                        entry.Property("DataAlteracao").IsModified = false;
-                        entry.Property("DataExclusao").CurrentValue = DateTime.Now;
-                    }
-                }
-            }
+        //            if ((bool)entry.Property("Status").CurrentValue)
+        //            {
+        //                entry.Property("DataAlteracao").CurrentValue = DateTime.Now;
+        //                entry.Property("DataExclusao").IsModified = false;
+        //            }
+        //            else
+        //            {
+        //                entry.Property("DataAlteracao").IsModified = false;
+        //                entry.Property("DataExclusao").CurrentValue = DateTime.Now;
+        //            }
+        //        }
+        //    }
 
-            return base.SaveChangesAsync(cancellationToken);
-        }
+        //    return base.SaveChangesAsync(cancellationToken);
+        //}
 
         #endregion
     }

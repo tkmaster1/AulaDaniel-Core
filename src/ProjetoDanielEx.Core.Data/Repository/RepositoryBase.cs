@@ -32,6 +32,8 @@ namespace ProjetoDanielEx.Core.Data.Repository
 
         public virtual void Adicionar(TEntity entity)
         {
+            entity.DataCadastro = DateTime.Now;
+            entity.Status = true;
             DbSet.Add(entity);
         }
 

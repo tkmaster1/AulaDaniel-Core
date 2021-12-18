@@ -39,9 +39,7 @@ namespace ProjetoDanielEx.Core.Service.Application
         public async Task<int> Adicionar(Cliente entity)
         {
             _clienteRepository.Adicionar(entity);
-
             await _clienteRepository.Salvar();
-
             return entity.Codigo;
         }
 
@@ -84,6 +82,11 @@ namespace ProjetoDanielEx.Core.Service.Application
         public async Task<Cliente> DocumentoExiste(string documento)
         {
             return await _clienteRepository.DocumentoExiste(documento);
+        }
+
+        public async Task<Cliente> ObterClienteEndereco(int codigoCliente)
+        {
+            return await _clienteRepository.ObterClienteEndereco(codigoCliente);
         }
 
         public void Dispose()

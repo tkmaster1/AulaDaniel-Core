@@ -151,6 +151,21 @@ namespace ProjetoDanielEx.Core.WebApi.Controllers
             return Response(cliente?.ToResponse());
         }
 
+        [HttpGet("ObterClienteEndereco/{codigo}")]
+        [Consumes("application/Json")]
+        [Produces("application/Json")]
+        [ProducesResponseType(typeof(ResponseEntidadeBase), 200)]
+        [ProducesResponseType(typeof(ResponseFalha), 400)]
+        [ProducesResponseType(typeof(ResponseFalha), 403)]
+        [ProducesResponseType(typeof(ResponseFalha), 409)]
+        [ProducesResponseType(typeof(ResponseFalha), 500)]
+        [ProducesResponseType(typeof(ResponseFalha), 502)]
+        public async Task<IActionResult> ObterClienteEndereco(int codigo)
+        {
+            var retorno = await _clienteAppServ.ObterClienteEndereco(codigo);
+            return Response(retorno?.ToResponseClienteEndereco());
+        }
+
         #endregion
     }
 }

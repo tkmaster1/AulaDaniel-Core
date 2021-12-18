@@ -11,5 +11,7 @@
         public string TipoPessoa { get; set; }
 
         public bool Status { get; set; }
+
+        public EnderecoDTO Endereco { get; set; }
     }
 }

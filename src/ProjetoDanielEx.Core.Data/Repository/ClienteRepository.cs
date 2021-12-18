@@ -26,6 +26,13 @@ namespace ProjetoDanielEx.Core.Data.Repository
             return await DbSet.Where(x => x.Documento.Trim().Equals(documento.Trim())).FirstOrDefaultAsync();
         }
 
+        public async Task<Cliente> ObterClienteEndereco(int codigoCliente)
+        {
+            return await Db.Clientes.AsNoTracking()
+                           .Include(c => c.Endereco)
+                           .FirstOrDefaultAsync(c => c.Codigo == codigoCliente);
+        }
+
         #endregion
     }
 }
