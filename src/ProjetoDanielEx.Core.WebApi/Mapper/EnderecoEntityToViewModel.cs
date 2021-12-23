@@ -11,13 +11,14 @@ namespace ProjetoDanielEx.Core.WebApi.Mapper
         /// </summary>
         /// <param name="entity"></param>
         /// <returns></returns>
-        public static Endereco ToRequest(this RequestAdicionarEndereco entity)
+        public static Endereco ToRequest(this RequestEndereco entity)
         {
             return new Endereco()
             {
+                Codigo = entity.Codigo ?? 0,
                 Logradouro = entity.Logradouro,
                 Numero = entity.Numero,
-                Complemento = entity.Complemento,
+                Complemento = !string.IsNullOrEmpty(entity.Complemento) ? entity.Complemento : string.Empty,
                 Bairro = entity.Bairro,
                 Cep = entity.Cep,
                 Cidade = entity.Cidade,
@@ -26,43 +27,25 @@ namespace ProjetoDanielEx.Core.WebApi.Mapper
             };
         }
 
-        ///// <summary>
-        ///// Request de atualização do endereço por cliente
-        ///// </summary>
-        ///// <param name="entity"></param>
-        ///// <returns></returns>
-        //public static Endereco ToRequest(this RequestAtualizarEndereco entity)
-        //{
-        //    return new Endereco()
-        //    {
-        //        Codigo = entity.Codigo,
-        //        Logradouro = entity.Logradouro,
-        //        Numero = entity.Numero,
-        //        Complemento = entity.Complemento,
-        //        Bairro = entity.Bairro,
-        //        Cep = entity.Cep,
-        //        Cidade = entity.Cidade,
-        //        Estado = entity.Estado,
-        //        CodigoCliente = entity?.CodigoCliente,
-        //        //DataAlteracao = System.DateTime.Now,
-        //        //Status = true
-        //    };
-        //}
-
         public static EnderecoDTO ToResponse(this Endereco entity)
         {
-            return new EnderecoDTO()
+            var retorno = new EnderecoDTO();
+
+            if (entity != null)
             {
-                Codigo = entity.Codigo,
-                Logradouro = entity.Logradouro,
-                Numero = entity.Numero,
-                Complemento = entity.Complemento,
-                Bairro = entity.Bairro,
-                Cep = entity.Cep,
-                Cidade = entity.Cidade,
-                Estado = entity.Estado,
-                CodigoCliente = entity?.CodigoCliente
-            };
+
+                retorno.Codigo = entity.Codigo;
+                retorno.Logradouro = entity.Logradouro;
+                retorno.Numero = entity.Numero;
+                retorno.Complemento = !string.IsNullOrEmpty(entity.Complemento) ? entity.Complemento : string.Empty;
+                retorno.Bairro = entity.Bairro;
+                retorno.Cep = entity.Cep;
+                retorno.Cidade = entity.Cidade;
+                retorno.Estado = entity.Estado;
+                retorno.CodigoCliente = entity?.CodigoCliente;
+            }
+
+            return retorno;
         }
     }
 }

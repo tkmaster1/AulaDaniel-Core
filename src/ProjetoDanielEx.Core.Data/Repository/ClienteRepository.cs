@@ -1,6 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using ProjetoDanielEx.Core.Domain.Entities;
 using ProjetoDanielEx.Core.Domain.Interfaces.Repositories;
+using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -14,7 +15,14 @@ namespace ProjetoDanielEx.Core.Data.Repository
 
         #endregion
 
-        #region Methods  
+        #region Methods
+
+        public async Task<IEnumerable<Cliente>> ListarTodosClienteEndereco()
+        {
+            return await Db.Clientes.AsNoTracking()
+                                    .Include(c => c.Endereco)
+                                    .ToListAsync();
+        }
 
         public async Task<Cliente> NomeExiste(string nomeDoCliente)
         {

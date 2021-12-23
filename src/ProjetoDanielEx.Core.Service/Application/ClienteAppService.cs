@@ -12,14 +12,17 @@ namespace ProjetoDanielEx.Core.Service.Application
         #region Properties
 
         private readonly IClienteRepository _clienteRepository;
+        private readonly IEnderecoRepository _enderecoRepository;
 
         #endregion
 
         #region Constructor
 
-        public ClienteAppService(IClienteRepository clienteRepository)
+        public ClienteAppService(IClienteRepository clienteRepository,
+            IEnderecoRepository enderecoRepository)
         {
             _clienteRepository = clienteRepository;
+            _enderecoRepository = enderecoRepository;
         }
 
         #endregion
@@ -28,7 +31,7 @@ namespace ProjetoDanielEx.Core.Service.Application
 
         public async Task<IEnumerable<Cliente>> ListarTodos()
         {
-            return await _clienteRepository.ListarTodos();
+            return await _clienteRepository.ListarTodosClienteEndereco();
         }
 
         public async Task<Cliente> ObterPorCodigo(int codigo)
@@ -47,11 +50,25 @@ namespace ProjetoDanielEx.Core.Service.Application
         {
             var model = await _clienteRepository.ObterPorCodigo(entity.Codigo);
 
-            model.Nome = entity.Nome;
-            model.Documento = entity.Documento;
-            model.TipoPessoa = entity.TipoPessoa;
+            if (model != null)
+            {
+                model.Nome = entity.Nome;
+                model.Documento = entity.Documento;
+                model.TipoPessoa = entity.TipoPessoa;
+                model.DataAlteracao = DateTime.Now;
+                model.Status = true;
 
-            _clienteRepository.Atualizar(model);
+                if (entity.Endereco.Codigo != 0)
+                {
+                    model.Endereco = await AtualizarEndereco(entity.Endereco);
+                }
+                else
+                {
+                    _enderecoRepository.Adicionar(entity.Endereco);
+                }
+
+                _clienteRepository.Atualizar(model);
+            }
 
             return await _clienteRepository.Salvar() > 0;
         }
@@ -92,6 +109,34 @@ namespace ProjetoDanielEx.Core.Service.Application
         public void Dispose()
         {
             GC.SuppressFinalize(this);
+        }
+
+        #endregion
+
+        #region Methods Private
+
+        private async Task<Endereco> AtualizarEndereco(Endereco endereco)
+        {
+            var modelEnd = await _enderecoRepository.ObterPorCodigo(endereco.Codigo);
+
+            if (modelEnd != null)
+            {
+                modelEnd.CodigoCliente = endereco?.CodigoCliente;
+
+                modelEnd.Logradouro = endereco.Logradouro;
+                modelEnd.Numero = endereco.Numero;
+                modelEnd.Complemento = endereco.Complemento;
+                modelEnd.Bairro = endereco.Bairro;
+                modelEnd.Cep = endereco.Cep;
+                modelEnd.Cidade = endereco.Cidade;
+                modelEnd.Estado = endereco.Estado;
+                modelEnd.DataAlteracao = DateTime.Now;
+                modelEnd.Status = true;
+
+                return modelEnd;
+            }
+
+            return new Endereco();
         }
 
         #endregion

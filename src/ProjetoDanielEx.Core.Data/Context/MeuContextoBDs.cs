@@ -1,9 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using ProjetoDanielEx.Core.Domain.Entities;
-using System;
 using System.Linq;
-using System.Threading;
-using System.Threading.Tasks;
 
 namespace ProjetoDanielEx.Core.Data
 {
@@ -13,6 +10,8 @@ namespace ProjetoDanielEx.Core.Data
 
         public MeuContextoBDs(DbContextOptions options) : base(options)
         {
+            ChangeTracker.LazyLoadingEnabled = false;
+            ChangeTracker.QueryTrackingBehavior = QueryTrackingBehavior.NoTracking;
         }
 
         #endregion

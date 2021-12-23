@@ -15,7 +15,8 @@ namespace ProjetoDanielEx.Core.WebApi.Mapper
                 Nome = entity.Nome,
                 Status = entity.Status,
                 Documento = entity.Documento,
-                TipoPessoa = entity.TipoPessoa.Trim().ToUpper()
+                TipoPessoa = entity.TipoPessoa.Trim().ToUpper(),
+                Endereco = entity?.Endereco.ToResponse() ?? new EnderecoDTO()
             };
         }
 
@@ -41,7 +42,24 @@ namespace ProjetoDanielEx.Core.WebApi.Mapper
                 retorno.Nome = request.Nome;
                 retorno.Documento = Util.RemoveNaoNumericos(request.Documento);
                 retorno.TipoPessoa = request.TipoPessoa.Trim().ToUpper();
-               
+
+                retorno.Endereco = request?.Endereco.ToRequest() ?? new Endereco();
+            }
+
+            return retorno;
+        }
+
+        public static Cliente ToRequest(this RequestAtualizarCliente request)
+        {
+            var retorno = new Cliente();
+
+            if (request != null)
+            {
+                retorno.Codigo = request.Codigo;
+                retorno.Nome = request.Nome;
+                retorno.Documento = Util.RemoveNaoNumericos(request.Documento);
+                retorno.TipoPessoa = request.TipoPessoa.Trim().ToUpper();
+
                 retorno.Endereco = request?.Endereco.ToRequest() ?? new Endereco();
             }
 
@@ -49,21 +67,11 @@ namespace ProjetoDanielEx.Core.WebApi.Mapper
 
             //return new Cliente()
             //{
+            //    Codigo = request.Codigo,
             //    Nome = request.Nome,
             //    Documento = Util.RemoveNaoNumericos(request.Documento),
             //    TipoPessoa = request.TipoPessoa.Trim().ToUpper()
             //};
-        }
-
-        public static Cliente ToRequest(this RequestAtualizarCliente request)
-        {
-            return new Cliente()
-            {
-                Codigo = request.Codigo,
-                Nome = request.Nome,
-                Documento = Util.RemoveNaoNumericos(request.Documento),
-                TipoPessoa = request.TipoPessoa.Trim().ToUpper()
-            };
         }
 
         public static Cliente ToRequest(this RequestReativarExcluirCliente request)

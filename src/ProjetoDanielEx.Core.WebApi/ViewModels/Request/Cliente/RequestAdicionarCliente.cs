@@ -10,6 +10,6 @@ namespace ProjetoDanielEx.Core.WebApi.ViewModels.Request.Cliente
 
         public string TipoPessoa { get; set; }
 
-        public RequestAdicionarEndereco Endereco { get; set; }
+        public RequestEndereco Endereco { get; set; }
     }
 }

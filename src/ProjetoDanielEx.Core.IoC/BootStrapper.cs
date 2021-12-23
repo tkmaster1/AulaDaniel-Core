@@ -34,6 +34,7 @@ namespace ProjetoDanielEx.Core.IoC
             services.AddScoped<MeuContextoBDs>();
             services.AddScoped<INotificationHandler<DomainNotification>, DomainNotificationHandler>();
             services.AddScoped<IClienteRepository, ClienteRepository>();
+            services.AddScoped<IEnderecoRepository, EnderecoRepository>();
 
             #endregion
         }

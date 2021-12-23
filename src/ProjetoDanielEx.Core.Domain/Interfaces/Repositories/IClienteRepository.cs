@@ -1,4 +1,5 @@
 ﻿using ProjetoDanielEx.Core.Domain.Entities;
+using System.Collections.Generic;
 using System.Threading.Tasks;
 
 namespace ProjetoDanielEx.Core.Domain.Interfaces.Repositories
@@ -10,5 +11,7 @@ namespace ProjetoDanielEx.Core.Domain.Interfaces.Repositories
         Task<Cliente> DocumentoExiste(string documento);
 
         Task<Cliente> ObterClienteEndereco(int codigoCliente);
+
+        Task<IEnumerable<Cliente>> ListarTodosClienteEndereco();
     }
 }

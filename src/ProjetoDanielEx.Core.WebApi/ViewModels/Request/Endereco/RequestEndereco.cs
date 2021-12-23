@@ -1,7 +1,9 @@
 ﻿namespace ProjetoDanielEx.Core.WebApi.ViewModels.Request.Endereco
 {
-    public class RequestAdicionarEndereco
+    public class RequestEndereco
     {
+        public int? Codigo { get; set; }
+
         public string Logradouro { get; set; }
 
         public string Numero { get; set; }
