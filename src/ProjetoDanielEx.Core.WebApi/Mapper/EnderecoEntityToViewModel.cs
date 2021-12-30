@@ -23,7 +23,7 @@ namespace ProjetoDanielEx.Core.WebApi.Mapper
                 Cep = entity.Cep,
                 Cidade = entity.Cidade,
                 Estado = entity.Estado,
-                CodigoCliente = entity?.CodigoCliente
+                CodigoCliente = entity?.CodigoCliente ?? 0
             };
         }
 
@@ -42,7 +42,7 @@ namespace ProjetoDanielEx.Core.WebApi.Mapper
                 retorno.Cep = entity.Cep;
                 retorno.Cidade = entity.Cidade;
                 retorno.Estado = entity.Estado;
-                retorno.CodigoCliente = entity?.CodigoCliente;
+                retorno.CodigoCliente = entity?.CodigoCliente ?? 0;
             }
 
             return retorno;

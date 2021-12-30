@@ -16,7 +16,7 @@
 
         public string Estado { get; set; }
 
-        public int? CodigoCliente { get; set; }
+        public int CodigoCliente { get; set; }
 
         /* EF Relation */
         public virtual Cliente Cliente { get; set; }

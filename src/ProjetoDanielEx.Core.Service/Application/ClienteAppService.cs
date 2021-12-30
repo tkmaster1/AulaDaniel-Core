@@ -121,7 +121,7 @@ namespace ProjetoDanielEx.Core.Service.Application
 
             if (modelEnd != null)
             {
-                modelEnd.CodigoCliente = endereco?.CodigoCliente;
+                modelEnd.CodigoCliente = endereco?.CodigoCliente ?? 0;
 
                 modelEnd.Logradouro = endereco.Logradouro;
                 modelEnd.Numero = endereco.Numero;
