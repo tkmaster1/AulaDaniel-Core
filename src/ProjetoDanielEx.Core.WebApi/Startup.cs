@@ -53,7 +53,7 @@ namespace ProjetoDanielEx.Core.WebApi
 
             #endregion
 
-            services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_3_0);
+            services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Latest);
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
