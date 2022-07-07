@@ -3,15 +3,17 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using ProjetoDanielEx.Core.Data;
 
 namespace ProjetoDanielEx.Core.Data.Migrations
 {
     [DbContext(typeof(MeuContextoBDs))]
-    partial class MeuContextoBDsModelSnapshot : ModelSnapshot
+    [Migration("20220707001253_BaseDocumentos")]
+    partial class BaseDocumentos
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
